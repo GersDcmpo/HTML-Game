@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body{
+            background-color: rgba(251, 204, 204, 0.829);
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas{
+            box-shadow: rgb(54, 54, 54) 20px 10px 50px;
+        }
+        .splash
+        {
+            cursor: pointer;
+            position: fixed;
+            top: 81px;
+            left: center;
+            width: 400px;
+            height: 401px;
+            background-image: url("splash_final.png");
+        }
+    </style>    
+</head>
+
+<body>
+    <h1 style="font-family:verdana;">Snake Game</h1>
+    <div class = "splash"></div>
+    <canvas id="game" width="400" height="400"/>
+    <script src="snake.js"></script>
+</body>
+</html>
